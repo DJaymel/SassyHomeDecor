@@ -1,0 +1,165 @@
+body{
+  font-family: "Arial", Serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+.platform{}
+
+.bgimg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/apartment-architecture-ceiling-lamp-269262.jpg');
+  min-height: 100%;
+}
+
+/* Menu Button Section Begins */
+
+.menu-btn{
+  width: auto;
+  right: 0;
+  text-decoration: none;
+}
+
+.menu-btn a{
+  color: #000;
+}
+
+.shd-button{
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.shd-top{
+  top: 30px;
+  position: fixed;
+  z-index: 1;
+}
+
+.shd-left{
+  /* left: 85%; */
+}
+
+.shd-white{
+  /* color: #000;
+  background-color: #cecece; */
+}
+
+.shd-2XL{
+  font-size: 36px;
+}
+
+.shd-text-grey{
+  color: #757575;
+}
+
+.shd-hov-ln-blk{
+
+}
+
+/* Menu Button Section Ends */
+
+.platform{
+  background-image: 'img/apartment-architecture-ceiling-lamp-269262.jpg';
+}
+
+.side-bar{
+  display: none;
+  padding-top: 150px;
+  right: 0;
+  z-index: 2;
+}
+
+.sassyNav{
+  background-color: #3b5998;
+  overflow: hidden;
+  height: 63px;
+}
+
+.sassyNav a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px 10px;
+  font-size: 17px;
+}
+
+.sassyNav ul{
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.sassyNav a:hover{
+  background-color: #dddddd;
+  color: #000000;
+}
+
+.side-nav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a{
+  padding: 10px 10px 25px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 22px;
+  color: #cccccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav .side-subnav a:hover{
+    text-decoration: line-through;
+}
+
+.side-nav a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.side-nav .btn-close{
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main{
+  transition:margin-right 0.5s;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sassyNav .material-icons{
+  z-index: 3;
+  width: 250px;
+  font-weight: bold;
+  display: none;
+  right: 0;
+}
+
+@@media(max-width: 568px){
+  .sassyNav{display: none}
+}
