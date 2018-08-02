@@ -4,6 +4,17 @@ body{
   overflow-x: hidden;
 }
 
+.logo{
+  position: absolute;
+  width: 320px;
+  height: 145px;
+
+  background: url(../img/SHD_logo.jpg);
+  background-size: 300px 150px;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+}
+
 .platform{}
 
 .bgimg{
