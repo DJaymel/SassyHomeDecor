@@ -72,6 +72,71 @@ body{
 /* About Us Elements Ends */
 
 
+
+/* Contact Elements Begin */
+.contact_sect1{
+  left: auto;
+  top: 75px;
+}
+
+.contact_logo{
+    width: 20%;
+    height: 100px;
+    background: url(../img/SHD_logo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    left: 45%;
+    top: 0px;
+    position: unset;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    background-color: #f4f4f4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact_horiz{
+  top: 1100px;
+}
+
+.menu_header{
+  margin: auto;
+  text-align: center;
+  width: 10%;
+}
+
+.menuCaption{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.contact_text{
+margin: auto;
+text-align: center;
+}
+
+.contact_caption{
+margin: auto;
+text-align: center;
+}
+
+.contact_info{
+
+}
+
+.social{
+
+}
+
+
+
+
+/* Contact Elements End */
+
+
+
 .platform{}
 
 .bgimg{
