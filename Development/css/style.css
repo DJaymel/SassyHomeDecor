@@ -4,12 +4,12 @@ body{
   overflow-x: hidden;
 }
 
-/* Homepage Elements Begin */
+/* Homepage Elements Begins */
 .homepage_logo{
-  width: 200px;
-  height: 100px;
+  width: 10%;
+  height: 15px;
   background: url(../img/SHD_logo.jpg);
-  background-size: 200px 100px;
+  background-size: 100% 100%;
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   mix-blend-mode: multiply;
@@ -20,16 +20,12 @@ body{
 }
 
 
-  /* position: absolute;
+  /*
   width: 100%;
   height: 100%;
-  background: url('../img/apartment-architecture-ceiling-lamp-269262.jpg');
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
-  background-repeat: no-repeat;
-  z-index: 0;
-  left: 0;
-  top: 0; */
+*/
 .homepage_bkgd{
   background-image: url(../img/apartment-architecture-ceiling-lamp-269262.jpg);
   background-position-x: center;
@@ -48,7 +44,33 @@ body{
   opacity: 1;
   display: block;
 }
-/* Homepage Elements End */
+/* Homepage Elements Ends */
+
+/* About Us Elements Begins */
+.aboutus_logo {
+  height: 100px;
+  background: url(../img/SHD_logo.jpg);
+  background-size: 100% 100%;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  background-color: #f4f4f4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.SHD_Sect1_Image {
+  background-image: url(../img/architecture-beautiful-exterior-106399.jpg);
+  background-size: 100% 100%;
+  height: 450px;
+  width: 50%;
+  background-color: #ffffff;
+}
+
+/* About Us Elements Ends */
+
 
 .platform{}
 
