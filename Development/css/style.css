@@ -4,16 +4,51 @@ body{
   overflow-x: hidden;
 }
 
-.logo{
-  position: absolute;
-  width: 320px;
-  height: 145px;
-
+/* Homepage Elements Begin */
+.homepage_logo{
+  width: 200px;
+  height: 100px;
   background: url(../img/SHD_logo.jpg);
-  background-size: 300px 150px;
+  background-size: 200px 100px;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  mix-blend-mode: multiply;
+  position: fixed;
+  padding: 40px;
+  left: 35px;
+  top: 2px;
+}
+
+
+  /* position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/apartment-architecture-ceiling-lamp-269262.jpg');
   background-blend-mode: multiply;
   mix-blend-mode: multiply;
+  background-repeat: no-repeat;
+  z-index: 0;
+  left: 0;
+  top: 0; */
+.homepage_bkgd{
+  background-image: url(../img/apartment-architecture-ceiling-lamp-269262.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
+/* Homepage Elements End */
 
 .platform{}
 
@@ -21,11 +56,11 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('../img/apartment-architecture-ceiling-lamp-269262.jpg');
+  background-image: url();
   min-height: 100%;
 }
 
-/* Menu Button Section Begins */
+/* Global Menu Button Section Begins */
 
 .menu-btn{
   width: auto;
@@ -56,15 +91,6 @@ body{
   z-index: 1;
 }
 
-.shd-left{
-  /* left: 85%; */
-}
-
-.shd-white{
-  /* color: #000;
-  background-color: #cecece; */
-}
-
 .shd-2XL{
   font-size: 36px;
 }
@@ -80,10 +106,11 @@ body{
 /* Menu Button Section Ends */
 
 .platform{
-  background-image: 'img/apartment-architecture-ceiling-lamp-269262.jpg';
+  z-index: -1;
 }
 
-.side-bar{
+
+/* .side-bar{
   display: none;
   padding-top: 150px;
   right: 0;
@@ -113,7 +140,7 @@ body{
 .sassyNav a:hover{
   background-color: #dddddd;
   color: #000000;
-}
+} */
 
 .side-nav{
   height: 100%;
@@ -158,7 +185,12 @@ body{
 
 #main{
   transition:margin-right 0.5s;
-  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#main_about{
+  transition:margin-right 0.5s;
   overflow: hidden;
   width: 100%;
 }
