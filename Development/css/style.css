@@ -71,9 +71,53 @@ body{
 
 /* About Us Elements Ends */
 
+/* Pricing Elements Begin*/
 
+.pricing_sect1{
+  left: auto;
+  top: 75px;
+}
+
+.pricing_logo{
+      width: 20%;
+      height: 100px;
+      background: url(../img/SHD_logo.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      left: 45%;
+      top: 0px;
+      position: unset;
+      background-blend-mode: multiply;
+      mix-blend-mode: multiply;
+      background-color: #f4f4f4;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+  .design{
+  width: 50%;
+  height: 250px;
+  background-image: url(../img/architecture-contemporary-couch-279607.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-left: 70px;
+
+}
+
+/*Pricing Elements Ends*/
 
 /* Contact Elements Begin */
+.background-contact {
+  border-style: solid;
+  border-radius: 20px;
+  border-color: purple;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  border-right: 20px;
+  border-left: 20px;
+
+}
+
 .contact_sect1{
   left: auto;
   top: 75px;
@@ -98,18 +142,24 @@ body{
 
 .contact_horiz{
   top: 1100px;
+  width: 30%;
 }
 
 .menu_header{
   margin: auto;
-  text-align: center;
-  width: 10%;
+    text-align: center;
+    width: 10%;
+    padding-right: 60px;
 }
 
 .menuCaption{
   margin: auto;
+  text-align: center;
   width: 60%;
-  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 39%;
+  padding-right: 39%;
 }
 
 .contact_text{
@@ -123,16 +173,29 @@ text-align: center;
 }
 
 .contact_info{
+  margin: 7px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 25px;
+}
 
+.info{
+  display: inline-block;
+  padding: 20px;
 }
 
 .social{
-
+  margin: 10px;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-
-
-
+.textDec{
+  text-decoration: none;
+  color: purple;
+}
 /* Contact Elements End */
 
 
@@ -277,6 +340,18 @@ text-align: center;
 }
 
 #main_about{
+  transition:margin-right 0.5s;
+  overflow: hidden;
+  width: 100%;
+}
+
+#main_pricing{
+  transition:margin-right 0.5s;
+  overflow: hidden;
+  width: 100%;
+}
+
+#main_contact{
   transition:margin-right 0.5s;
   overflow: hidden;
   width: 100%;
