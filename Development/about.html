@@ -34,12 +34,14 @@
           </div>
 
         <div id="main_about">
-
           <div class="top-center">
             <div class="aboutus_logo"></div>
           </div>
           <div class="SHD_Section1">
-            <div class="SHD_Sect1_Info">
+            <div class="SHD_Section1_Column1">
+              <div class="SHD_Sect1_Image"></div>
+            </div>
+            <div class="SHD_Section1_Column2">
               <h3>A Complete Design Package</h3>
               <p class="Section1_Desc">We offer a full design service from planning to completion. We pride ourselves
                 on our relationships with our clients and are here to guide you through every element of creating your dream home.</p>
@@ -47,11 +49,10 @@
                 through to the very finishing touches, there isn’t a single element that is overlooked. We source the most
                 beautiful furnishings from all over the world and can create stunning bespoke furniture for your home.</p>
             </div>
-            <div class="SHD_Sect1_Image"></div>
           </div>
 
           <div class="SHD_Section2">
-            <div class="SHD_Sect2_Info">
+            <div class="SHD_Section2_Column1">
               <h3>Home Styling and Personal Shopping</h3>
               <p class="Section2_Desc">We love to help our clients with their homes and sometimes they just need some
                 finishing touches when they feel they can’t quite get a space right or there is an extra layer that their
@@ -61,13 +62,22 @@
               <p class="Section2_Desc">We have a beautiful bespoke service that can provide all those finishing touches
                 from commissioned artwork to rugs, carpets, photo walls, embroidered bedding, handmade furniture and more.</p>
             </div>
-            <div class="SHD_Sect2_Image"></div>
+            <div class="SHD_Section2_Column2">
+              <div class="SHD_Sect2_Image"></div>
+            </div>
           </div>
-
 
         </div>
 
     </div>
+
+    <style>
+      @media screen and (max-width: 500px){
+        .column{
+          width: 100%;
+        }
+      }
+    </style>
     <script>
       function openNavMenu(){
         document.getElementById('sideMenu').style.width = '250px';
