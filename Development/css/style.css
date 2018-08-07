@@ -138,11 +138,6 @@ body{
 
 /* Pricing Elements Begin*/
 
-.pricing_sect1{
-  left: auto;
-  top: 75px;
-}
-
 .pricing_logo{
       width: 20%;
       height: 100px;
@@ -159,6 +154,43 @@ body{
       margin-left: auto;
       margin-right: auto;
 }
+.pricing_sect1{
+        left: auto;
+        top: 75px;
+        margin-bottom: 30px;
+}
+
+.pricing_col1{
+position: absolute;
+height: 400px;
+float: left;
+z-index: 1;
+width: 100%;
+margin-top: auto;
+margin-right: 5px;
+margin-bottom: auto;
+margin-left: 5px;
+}
+
+.pricing_col2{
+      margin-right: -252px;
+      width: 100%;
+      height: 400px;
+      float: right;
+}
+
+.beautiful_text{
+  margin-top: auto;
+  margin-right: 5px;
+  margin-bottom: auto;
+  margin-left: 5px;
+  text-align: center;
+  background-color: white;
+  background-size: 35% 35%;
+  width: 40%;
+  padding: 1% 1% 1% 1%;
+}
+
   .design{
   width: 50%;
   height: 250px;
@@ -166,7 +198,11 @@ body{
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-left: 70px;
+  margin: 0px 0px 0px 0px;
+}
 
+.price_packages{
+  padding: 250px 0px 0px 0px;
 }
 
 /*Pricing Elements Ends*/
@@ -283,7 +319,7 @@ text-align: center;
   text-decoration: none;
 }
 
-.menu-btn a{
+.menu-btn {
   color: #000;
 }
 
