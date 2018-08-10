@@ -1,10 +1,18 @@
 body {
   font-family: "Arial", Serif;
-  background-color: #fff;
+  /* background-color: #f7edf6; */
+  background-color: #f7edf633;
   overflow-x: hidden;
 }
 
 /* Homepage Elements Begins */
+
+/* -- Mobile Section Begins -- */
+
+
+
+/* -- Mobile Section Ends -- */
+
 .homepage_logo {
   width: 10%;
   height: 15px;
@@ -40,6 +48,13 @@ body {
 /* Homepage Elements Ends */
 
 /* About Us Elements Begins */
+
+/* -- Mobile Section Begins -- */
+
+
+
+/* -- Mobile Section Ends -- */
+
 .top-center {
   height: 800px;
   background: url(../img/classy-living-room.jpg);
@@ -177,7 +192,54 @@ body {
 }
 
 .onerow_above_footer {
-  padding: 0% 0% 13% 0%;
+  padding: 1em 0em 10em 0em;
+
+}
+
+.contact_ribbon {
+  font-size: 22px !important;
+  width: 20%;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 2em auto 2em;
+}
+
+.contact_ribbon:before, .contact_ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+.contact_ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.contact_ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.contact_ribbon .ribbon-content:before, .contact_ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+.contact_ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.contact_ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
 }
 
 .mini-contact-row {
@@ -191,12 +253,10 @@ body {
   text-align: center;
 }
 
-.about_pricing {
-  position: relative;
-  background-color: #000;
-  width: 100%;
-  display: inline;
-  background-color: inherit;
+#about_pricing {
+  background: #e4e4e452;
+  opacity: 0.6;
+  height: 7em;
 }
 
 .footer_column1 {
@@ -204,15 +264,16 @@ body {
   text-align: center;
   display: inline;
   width: 50%;
+  padding: 2em 0em 0em 0em;
 }
 
 .footer_column2 {
   display: inline;
   text-align: center;
   width: 50%;
-  height: 100px;
+  height: 0em;
   float: right;
-  padding: 15px 0 0 0;
+  padding: 3em 0em 0em 0em;
 }
 
 .user-awareness {
