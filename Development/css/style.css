@@ -1,11 +1,11 @@
-body{
+body {
   font-family: "Arial", Serif;
   background-color: #fff;
   overflow-x: hidden;
 }
 
 /* Homepage Elements Begins */
-.homepage_logo{
+.homepage_logo {
   width: 10%;
   height: 15px;
   background: url(../img/SHD_logo.jpg);
@@ -19,14 +19,7 @@ body{
   top: 2px;
 }
 
-
-  /*
-  width: 100%;
-  height: 100%;
-  background-blend-mode: multiply;
-  mix-blend-mode: multiply;
-*/
-.homepage_bkgd{
+.homepage_bkgd {
   background-image: url(../img/apartment-architecture-ceiling-lamp-269262.jpg);
   background-position-x: center;
   background-position-y: center;
@@ -47,6 +40,12 @@ body{
 /* Homepage Elements Ends */
 
 /* About Us Elements Begins */
+.top-center {
+  height: 800px;
+  background: url(../img/classy-living-room.jpg);
+  background-size: 100% 100%;
+}
+
 .aboutus_logo {
   height: 100px;
   background: url(../img/SHD_logo.jpg);
@@ -60,23 +59,67 @@ body{
   width: 16%;
 }
 
-.top-center{
-  height: 800px;
-  background: url(../img/classy-living-room.jpg);
-  background-size: 100% 100%;
+.banner {
+  width: inherit;
+  height: inherit;
 }
 
-.SHD_Section1{
-  padding: 3% 1% 3% 1%;
+.ribbon {
+  font-size: 22px !important;
+  width: 20%;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 4em auto 4em;
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
 }
 
-.SHD_Section1::after{
+.SHD_Section1 {
+  padding: 3em 1em 5em 1em;
+}
+
+.SHD_Section1::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.SHD_Section1_Column1{
+.SHD_Section1_Column1 {
   float: left;
   width: 45%;
   padding: 3% 1% 3% 1%;
@@ -92,24 +135,24 @@ body{
   box-shadow: 5px 5px 20px 5px #6f6f6f;
 }
 
-.SHD_Section1_Column2{
+.SHD_Section1_Column2 {
   float: right;
   width: 45%;
   padding: 10% 2% 0% 3%;
   font-size: 120%;
 }
 
-.SHD_Section2{
-  padding: 3% 1% 3% 1%;
+.SHD_Section2 {
+  padding: 3em 1em 5em 1em;
 }
 
-.SHD_Section2::after{
+.SHD_Section2::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.SHD_Section2_Column1{
+.SHD_Section2_Column1 {
   float: left;
   width: 45%;
   padding: 1% 0% 0% 2%;
@@ -126,59 +169,69 @@ body{
   box-shadow: -5px 5px 20px 5px #662D91;
 }
 
-.SHD_Section2_Column2{
+.SHD_Section2_Column2 {
   float: right;
   width: 45%;
   padding: 0% 2% 0% 0%;
   font-size: 120%;
 }
 
-.mini-contact-row{
-  display: inline-block;
+.onerow_above_footer {
+  padding: 0% 0% 13% 0%;
 }
 
-.mini-contact-column{
-  column-width: 30%;
-  display: inline-block;
-  height: 100px;
-  padding: 5px;
-}
-
-.footer_info{
+.mini-contact-row {
   display: inline;
 }
 
-.footer_column1{
-  display: inline;
-  width: 49%;
+.mini-contact-column {
+  width: 33.33%;
   height: 100px;
-  padding: 5px;
   float: left;
+  text-align: center;
 }
 
-.footer_column2{
+.about_pricing {
+  position: relative;
+  background-color: #000;
+  width: 100%;
   display: inline;
-  width: 49%;
-  height: 100px;
-  padding: 5px;
-  float: right;
+  background-color: inherit;
 }
 
-.user-awareness{
+.footer_column1 {
+  float: left;
+  text-align: center;
+  display: inline;
+  width: 50%;
+}
+
+.footer_column2 {
+  display: inline;
+  text-align: center;
+  width: 50%;
+  height: 100px;
+  float: right;
+  padding: 15px 0 0 0;
+}
+
+.user-awareness {
   display: inline;
   width: 100px;
   height: 100px;
   padding: 5px;
 }
 
-.SHD_privacy{
+.SHD_privacy {
+  color: #000;
   text-decoration: none;
   width: 100px;
   height: 100px;
   padding: 5px;
 }
 
-.SHD_terms{
+.SHD_terms {
+  color: #000;
   text-decoration: none;
   width: 100px;
   height: 100px;
@@ -410,39 +463,6 @@ text-align: center;
 .platform{
   z-index: -1;
 }
-
-
-/* .side-bar{
-  display: none;
-  padding-top: 150px;
-  right: 0;
-  z-index: 2;
-}
-
-.sassyNav{
-  background-color: #3b5998;
-  overflow: hidden;
-  height: 63px;
-}
-
-.sassyNav a{
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px 10px;
-  font-size: 17px;
-}
-
-.sassyNav ul{
-  margin: 8px 0 0 0;
-  list-style: none;
-}
-
-.sassyNav a:hover{
-  background-color: #dddddd;
-  color: #000000;
-} */
 
 .side-nav{
   height: 100%;
