@@ -192,7 +192,7 @@ body {
 }
 
 .onerow_above_footer {
-  padding: 1em 0em 10em 0em;
+  padding: 1em 0em 14em 0em;
 
 }
 
@@ -253,6 +253,14 @@ body {
   text-align: center;
 }
 
+.circle {
+  height: 5em;
+  width: 5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 #about_pricing {
   background: #e4e4e452;
   opacity: 0.6;
@@ -262,15 +270,16 @@ body {
 .footer_column1 {
   float: left;
   text-align: center;
-  display: inline;
-  width: 50%;
-  padding: 2em 0em 0em 0em;
+  display: inline-flex;
+  padding: 0em 0em 0em 1em;
+  margin: 2em 0em -4em 0em;
+  width: 65%;
 }
 
 .footer_column2 {
   display: inline;
   text-align: center;
-  width: 50%;
+  width: 25%;
   height: 0em;
   float: right;
   padding: 3em 0em 0em 0em;
@@ -278,9 +287,9 @@ body {
 
 .user-awareness {
   display: inline;
-  width: 100px;
+  width: auto;
   height: 100px;
-  padding: 5px;
+  padding: 1em 1em;
 }
 
 .SHD_privacy {
@@ -289,6 +298,10 @@ body {
   width: 100px;
   height: 100px;
   padding: 5px;
+}
+
+.SHD_rights{
+  padding: 0em 0.75em 0em 0em
 }
 
 .SHD_terms {
@@ -376,8 +389,7 @@ padding: 3% 5% 5% 1%;
   border-style: solid;
   border-radius: 20px;
   border-color: #926daf;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding: 6% 0 6% 0%;
   border-right: 20px;
   border-left: 20px;
 }
@@ -429,8 +441,8 @@ text-align: center;
 }
 
 .contact_captionText {
-  width: 60%;
-margin: 1.35em 14em 1.35em 14em
+  width: 50%;
+  margin: 1.35em 0em 1.35em 25%;
 }
 
 .contact_info_section {
@@ -458,9 +470,8 @@ margin: 1.35em 14em 1.35em 14em
 .address {
   display: inline;
   width: 10%;
-  padding: 0em 0em 0em 0em;
+  padding: 0em 0.25em 0em 0.25em;
 }
-
 
 .social{
   margin: 0em 0em 0em 0em;
@@ -482,6 +493,14 @@ margin: 1.35em 14em 1.35em 14em
   right: 0;
   text-decoration: none;
   color: #000;
+}
+
+.social-media-sidebar{
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  display: inline-flex;
+  margin: 25% 30%;
 }
 
 .contact-menu-btn {
