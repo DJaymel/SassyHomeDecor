@@ -1,13 +1,14 @@
-body{
+body {
   font-family: "Arial", Serif;
-  background-color: #fff;
+  /* background-color: #f7edf6; */
+  background-color: #f7edf633;
   overflow-x: hidden;
 }
 
-/* Homepage Elements Begins */
-.homepage_logo{
-  width: 10%;
-  height: 15px;
+/* ----- ----- ----- Home Page Section Begins ----- ----- ----- */
+.homepage_logo {
+  width: 6em;
+  height: 1em;
   background: url(../img/SHD_logo.jpg);
   background-size: 100% 100%;
   background-blend-mode: multiply;
@@ -15,18 +16,11 @@ body{
   mix-blend-mode: multiply;
   position: fixed;
   padding: 40px;
-  left: 35px;
-  top: 2px;
+  left: 1em;
+  top: 0em;
 }
 
-
-  /*
-  width: 100%;
-  height: 100%;
-  background-blend-mode: multiply;
-  mix-blend-mode: multiply;
-*/
-.homepage_bkgd{
+.homepage_bkgd {
   background-image: url(../img/apartment-architecture-ceiling-lamp-269262.jpg);
   background-position-x: center;
   background-position-y: center;
@@ -37,18 +31,24 @@ body{
   background-clip: initial;
   background-color: initial;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0em;
+  left: 0em;
   z-index: 0;
   visibility: visible;
   opacity: 1;
   display: block;
 }
-/* Homepage Elements Ends */
+/* ----- ----- ----- Home Page Section Ends ----- ----- ----- */
 
-/* About Us Elements Begins */
+/* ----- ----- ----- About Page Section Begins ----- ----- ----- */
+.top-center {
+  height: 800px;
+  background: url(../img/classy-living-room.jpg);
+  background-size: 100% 100%;
+}
+
 .aboutus_logo {
-  height: 100px;
+  height: 6em;
   background: url(../img/SHD_logo.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -57,26 +57,76 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 16%;
+  width: 11em;
 }
 
-.top-center{
-  height: 800px;
-  background: url(../img/classy-living-room.jpg);
-  background-size: 100% 100%;
+.banner {
+  width: inherit;
+  height: inherit;
 }
 
-.SHD_Section1{
-  padding: 3% 1% 3% 1%;
+.ribbon {
+  font-size: 22px !important;
+  width: 10em;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 4em auto 4em;
 }
 
-.SHD_Section1::after{
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
+}
+
+.ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+.ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.SHD_Section1 {
+  padding: 3em 1em 5em 1em;
+}
+
+.SHD_Section1::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.SHD_Section1_Column1{
+.SHD_Section1_Column1 {
   float: left;
   width: 45%;
   padding: 3% 1% 3% 1%;
@@ -92,27 +142,42 @@ body{
   box-shadow: 5px 5px 20px 5px #6f6f6f;
 }
 
-.SHD_Section1_Column2{
+.SHD_Section1_Column2 {
   float: right;
   width: 45%;
   padding: 10% 2% 0% 3%;
   font-size: 120%;
 }
 
-.SHD_Section2{
-  padding: 3% 1% 3% 1%;
+.Section1_Desc{
+  /* Enter Text Here */
 }
 
-.SHD_Section2::after{
+.SHD_Section2 {
+  padding: 3em 1em 5em 1em;
+}
+
+.SHD_Section2::after {
   content: "";
   clear: both;
   display: table;
 }
 
-.SHD_Section2_Column1{
+.SHD_Section2_Column1 {
   float: left;
   width: 45%;
   padding: 1% 0% 0% 2%;
+  font-size: 120%;
+}
+
+.Section2_Desc{
+  /* Enter Text Here */
+}
+
+.SHD_Section2_Column2 {
+  float: right;
+  width: 45%;
+  padding: 0% 2% 0% 0%;
   font-size: 120%;
 }
 
@@ -126,103 +191,154 @@ body{
   box-shadow: -5px 5px 20px 5px #662D91;
 }
 
-.SHD_Section2_Column2{
-  float: right;
-  width: 45%;
-  padding: 0% 2% 0% 0%;
-  font-size: 120%;
+.onerow_above_footer {
+  padding: 1em 0em 14em 0em;
 }
 
-.mini-contact-row{
-  display: inline-block;
+.contact_ribbon {
+  font-size: 22px !important;
+  width: 10em;
+  position: relative;
+  background: #ba89b6;
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em;
+  margin: 4em auto 4em;
 }
 
-.mini-contact-column{
-  column-width: 30%;
-  display: inline-block;
-  height: 100px;
-  padding: 5px;
+.contact_ribbon:before, .contact_ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #986794;
+  z-index: -1;
 }
 
-.footer_info{
+.contact_ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+.contact_ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.contact_ribbon .ribbon-content:before, .contact_ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #804f7c transparent transparent transparent;
+  bottom: -1em;
+}
+
+.contact_ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+.contact_ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.mini-contact-row {
   display: inline;
 }
 
-.footer_column1{
-  display: inline;
-  width: 49%;
+.mini-contact-column {
+  width: 33.33%;
   height: 100px;
-  padding: 5px;
   float: left;
+  text-align: center;
 }
 
-.footer_column2{
+.circle {
+  height: 5em;
+  width: 5em;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.footer_column1 {
+  float: left;
+  text-align: center;
+  display: inline-flex;
+  padding: 0em 0em 0em 1em;
+  margin: 2em 0em -4em 0em;
+  width: 65%;
+}
+
+.SHD_rights{
+  padding: 0em 0.75em 0em 0em
+}
+
+.user-awareness {
   display: inline;
-  width: 49%;
+  width: auto;
+  height: 100px;
+  padding: 1em 1em;
+}
+
+.SHD_privacy {
+  color: #000;
+  text-decoration: none;
+  width: 100px;
   height: 100px;
   padding: 5px;
+}
+
+.SHD_terms {
+  color: #000;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+.footer_column2 {
+  display: inline;
+  text-align: center;
+  width: 25%;
+  height: 0em;
   float: right;
+  padding: 3em 0em 0em 0em;
 }
+/* ----- ----- ----- About Page Section Ends ----- ----- ----- */
 
-.user-awareness{
-  display: inline;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-}
-
-.SHD_privacy{
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-}
-
-.SHD_terms{
-  text-decoration: none;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-}
-
-/* About Us Elements Ends */
-
-/* Pricing Elements Begin*/
-
+/* ----- ----- ----- Pricing Page Section Begins ----- ----- ----- */
 .pricing_logo{
-      width: 20%;
-      height: 100px;
-      background: url(../img/SHD_logo.jpg);
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      left: 45%;
-      top: 0px;
-      position: unset;
-      background-blend-mode: multiply;
-      mix-blend-mode: multiply;
-      background-color: #f4f4f4;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+  width: 20%;
+  height: 100px;
+  background: url(../img/SHD_logo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 45%;
+  top: 0px;
+  position: unset;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  background-color: #f4f4f4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .pricing_sect1{
   height: 300px;
 }
 
 .pricing_col1{
-position: absolute;
-height: 400px;
-float: left;
-width: 60%;
-align-items: center;
-padding: 3% 5% 5% 1%;
-}
-
-.pricing_col2{
-  width: 75%;
+  position: absolute;
   height: 400px;
-  float: right;
-  z-index: -2;
+  float: left;
+  width: 60%;
+  align-items: center;
+  padding: 3% 5% 5% 1%;
 }
 
 .overlayCaption{
@@ -232,17 +348,21 @@ padding: 3% 5% 5% 1%;
   width: 50%;
   height: 300px;
   padding: 1% 0% 1% 0%;
-
-
 }
 
-  .design{
+.pricing_col2{
+  width: 75%;
+  height: 400px;
+  float: right;
+  z-index: -2;
+}
+
+.design{
   width: 100%;
   height: 395px;
   background-image: url(../img/architecture-contemporary-couch-279607.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
 }
 
 .price_packages{
@@ -264,122 +384,120 @@ padding: 3% 5% 5% 1%;
   float: right;
   text-align: center;
 }
+/* ----- ----- ----- Pricing Page Section Ends ----- ----- ----- */
 
-/*Pricing Elements Ends*/
 
-/* Contact Elements Begin */
+/* ----- ----- ----- Furniture Page Section Begins ----- ----- ----- */
+
+/* ----- ----- ----- Furniture Page Section Ends ----- ----- ----- */
+
+
+/* ----- ----- ----- Contact Page Section Begins ----- ----- ----- */
+.contact-menu-btn {
+/* Enter Text Here */
+}
+
 .background-contact {
   border-style: solid;
   border-radius: 20px;
-  border-color: purple;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  border-color: #926daf;
+  padding: 6% 0 6% 0%;
   border-right: 20px;
   border-left: 20px;
-
 }
 
 .contact_sect1{
-  left: auto;
-  top: 75px;
+  /* Enter Text Here */
 }
 
 .contact_logo{
-    width: 20%;
-    height: 100px;
-    background: url(../img/SHD_logo.jpg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    left: 45%;
-    top: 0px;
-    position: unset;
-    background-blend-mode: multiply;
-    mix-blend-mode: multiply;
-    background-color: #f4f4f4;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  width: 12em;
+  height: 6em;
+  background: url(../img/SHD_logo.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  left: 45%;
+  top: 0px;
+  position: unset;
+  background-blend-mode: multiply;
+  mix-blend-mode: multiply;
+  background-color: #fdfbfd;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.contact_horiz{
-  top: 1100px;
-  width: 30%;
+.contact_horiz{;
+  width: 15em;
+  padding: 0em 0em 0em 0em;
+  text-align: center;
 }
 
-.menu_header{
-  margin: auto;
-    text-align: center;
-    width: 10%;
-    padding-right: 60px;
+.menu_header {
+  text-align: center;
 }
 
-.menuCaption{
+.menuCaption {
+  text-align: center;
+  padding: 0em 0em 0em 0em;
+}
+
+.contact_text {
+  text-align: center;
+  padding: 2em 0em 1em 0em;
+}
+
+.contact_caption {
   margin: auto;
   text-align: center;
-  width: 60%;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  padding-left: 39%;
-  padding-right: 39%;
 }
 
-.contact_text{
-margin: auto;
-text-align: center;
+.contact_captionText {
+  width: 50%;
+  margin: 1.35em 0em 1.35em 25%;
 }
 
-.contact_caption{
-margin: auto;
-text-align: center;
+.contact_info_section {
+  width: 100%;
+  text-align: center;
+  display: inline;
 }
 
-.contact_info{
-  margin: 7px;
-    text-align: center;
-    padding-top: 0px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 25px;
+.CallOrEmail {
+  text-align: center;
+  padding: 3em 0em 1em 0em;
 }
 
-.info{
-  display: inline-block;
-  padding: 20px;
+.info {
+  display: inline;
+  width: 10%;
+  padding: 0em 0em 0em 2em;
+}
+
+.locaddress {
+  text-align: center;
+  padding: 1em 0em 2em 0em;
+}
+
+.address {
+  display: inline;
+  width: 10%;
+  padding: 0em 0.25em 0em 0.25em;
 }
 
 .social{
-  margin: 10px;
+  margin: 0em 0em 0em 0em;
   text-align: center;
-  padding-bottom: 40px;
+  padding: 0em 0em 0em 0em;
 }
+/* Previously Defined: .social_media(Sidebar Menu) */
+/* ----- ----- ----- Contact Page Section Ends----- ----- ----- */
 
-.textDec{
-  text-decoration: none;
-  color: purple;
-}
-/* Contact Elements End */
-
-
-
-.platform{}
-
-.bgimg{
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url();
-  min-height: 100%;
-}
-
-/* Global Menu Button Section Begins */
-
+/* ----- ----- ----- Menu Button for Sidebar Section Begins ----- ----- ----- */
 .menu-btn{
   width: auto;
   right: 0;
   text-decoration: none;
-}
-
-.menu-btn {
   color: #000;
 }
 
@@ -409,50 +527,9 @@ text-align: center;
 .shd-text-grey{
   color: #757575;
 }
+/* ----- ----- ----- Menu Button for Sidebar Section Ends ----- ----- ----- */
 
-.shd-hov-ln-blk{
-
-}
-
-/* Menu Button Section Ends */
-
-.platform{
-  z-index: -1;
-}
-
-
-/* .side-bar{
-  display: none;
-  padding-top: 150px;
-  right: 0;
-  z-index: 2;
-}
-
-.sassyNav{
-  background-color: #3b5998;
-  overflow: hidden;
-  height: 63px;
-}
-
-.sassyNav a{
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px 10px;
-  font-size: 17px;
-}
-
-.sassyNav ul{
-  margin: 8px 0 0 0;
-  list-style: none;
-}
-
-.sassyNav a:hover{
-  background-color: #dddddd;
-  color: #000000;
-} */
-
+/* ----- ----- ----- Sidebar Menu Section Begins Here ----- ----- ----- */
 .side-nav{
   height: 100%;
   width: 0;
@@ -494,6 +571,22 @@ text-align: center;
   margin-left: 50px;
 }
 
+.social-media-sidebar{
+  width: 100%;
+  height: 0px;
+  text-align: center;
+  display: inline-flex;
+  margin: 25% 30%;
+}
+
+.social_media{
+  text-decoration: none;
+  color: #673091;
+  padding: 0em 0.25em 0em 0.25em;
+}
+/* ----- ----- ----- Sidebar Menu Section Ends Here ----- ----- ----- */
+
+/* Page IDs Begin Here*/
 #main{
   transition:margin-right 0.5s;
   overflow: hidden;
@@ -512,20 +605,99 @@ text-align: center;
   width: 100%;
 }
 
+#main_furniture{
+  transition: : margin-right 0.5s;
+  overflow: hidden;
+  width: 100%;
+}
+
 #main_contact{
   transition:margin-right 0.5s;
   overflow: hidden;
   width: 100%;
 }
 
-.sassyNav .material-icons{
-  z-index: 3;
-  width: 250px;
-  font-weight: bold;
-  display: none;
-  right: 0;
+#about_pricing {
+  background: #e4e4e452;
+  opacity: 0.6;
+  height: 7em;
 }
+/* Page IDs End Here*/
 
-@@media(max-width: 568px){
-  .sassyNav{display: none}
-}
+
+/* ----- ----- ----- ----- ----- Media Queries Begin Here ----- ----- ----- ----- ----- */
+
+
+
+/* ----- ----- ----- Home Media Queries Begin Here ----- ----- ----- */
+
+/* -- Home Page Mobile Query Section Begins Here -- */
+/* --  Home Page Mobile Query Section Ends Here -- */
+
+/* -- Home Page Tablet Query Section Begins Here -- */
+/* --  Home Page Tablet Query Section Ends Here -- */
+
+/* -- Home Page Desktop Query Section Begins Here -- */
+/* --  Home Page Desktop Query Section Ends Here -- */
+
+/* ----- ----- ----- Home Media Queries End Here ----- ----- ----- */
+
+
+/* ----- ----- ----- About Media Queries Begin Here ----- ----- ----- */
+
+/* --  Page Mobile Query Section Begins Here -- */
+/* --   Page Mobile Query Section Ends Here -- */
+
+/* --  Page Tablet Query Section Begins Here -- */
+/* --   Page Tablet Query Section Ends Here -- */
+
+/* --  Page Desktop Query Section Begins Here -- */
+/* --  Page Desktop Query Section Ends Here -- */
+
+/* ----- ----- -----  About Media Queries End Here ----- ----- ----- */
+
+
+/* ----- ----- -----  Pricing Media Queries Begin Here ----- ----- ----- */
+
+/* -- Pricing Page Mobile Query Section Begins Here -- */
+/* -- Pricing Page Mobile Query Section Ends Here -- */
+
+/* -- Pricing Page Tablet Query Section Begins Here -- */
+/* -- Pricing Page Tablet Query Section Ends Here -- */
+
+/* -- Pricing Page Desktop Query Section Begins Here -- */
+/* -- Pricing Page Desktop Query Section Ends Here -- */
+
+/* ----- ----- ----- Pricing Media Queries End Here ----- ----- ----- */
+
+
+/* ----- ----- ----- Furniture Media Queries Begin Here ----- ----- ----- */
+
+/* -- Furniture Page Mobile Query Section Begins Here -- */
+/* -- Furniture Page Mobile Query Section Ends Here -- */
+
+/* -- Furniture Page Tablet Query Section Begins Here -- */
+/* -- Furniture Page Tablet Query Section Ends Here -- */
+
+/* -- Furniture Page Desktop Query Section Begins Here -- */
+/* -- Furniture Page Desktop Query Section Ends Here -- */
+
+/* ----- ----- ----- Furniture Media Queries End Here ----- ----- ----- */
+
+
+/* ----- ----- ----- Contact Media Queries Begin Here ----- ----- ----- */
+
+/* -- Contact Page Mobile Query Section Begins Here -- */
+/* -- Contact Page Mobile Query Section Ends Here -- */
+
+/* -- Contact Page Tablet Query Section Begins Here -- */
+/* -- Contact Page Tablet Query Section Ends Here -- */
+
+/* -- Contact Page Desktop Query Section Begins Here -- */
+/* -- Contact Page Desktop Query Section Ends Here -- */
+
+/* ----- ----- ----- Contact Media Queries End Here ----- ----- ----- */
+
+
+
+/* ----- ----- ----- ----- ----- Media Queries End Here ----- ----- ----- ----- -----*/
