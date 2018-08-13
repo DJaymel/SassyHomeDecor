@@ -250,9 +250,19 @@ padding: 3% 5% 5% 1%;
   text-align: center;
 }
 
-.pricingGrids{
+.pricingGrid1{
   display: inline-block;
-  padding: 20% 20% 20% 20%;
+  height: 300px;
+  width: 50%;
+  float: left;
+}
+
+.pricingGrid2{
+  display: inline-block;
+  height: 300px;
+  width: 70%;
+  float: right;
+  text-align: center;
 }
 
 /*Pricing Elements Ends*/
