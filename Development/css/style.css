@@ -374,7 +374,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
-  grid-column-gap: 2em;
+  /* grid-column-gap: 1em; */
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -384,7 +384,7 @@ body {
   color: #eee;
   z-index: 1;
   /* overflow: hidden; */
-  margin: 0% 50% 0% 15%;
+  margin: 0% 50% 0% 20%;
 }
 
 .pricingGrid1 > div{
