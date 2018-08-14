@@ -378,7 +378,48 @@ body {
 
 
 /* ----- ----- ----- Furniture Page Section Begins ----- ----- ----- */
+.furniture_page {
+  margin: 10px auto;
+  width: 100%;
+  font-family: 'Lato';
+  text-align: center;
+}
 
+h2 {
+  margin: 25px;
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.container {
+  display: grid;
+  height: inherit;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 5px;
+  font-family: 'Lato';
+  text-align: center;
+  font-size: 1.5em;
+  margin: 40px 30px;
+  justify-content: space-around;
+  background: #dedede;
+  align-content: space-evenly;
+}
+
+.item {
+  padding: 10px 10px 10px 10px;
+  font-size: 1.25em;
+  /* border: 1px solid black; */
+}
+
+.item-header {
+  padding: 0em 0em 0em 0em;
+  margin: 0.25em 0em 0em 0em;
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  padding: 1.25em 0em 0em 0em;
+  font-size: 1.25em;
+}
 /* ----- ----- ----- Furniture Page Section Ends ----- ----- ----- */
 
 
