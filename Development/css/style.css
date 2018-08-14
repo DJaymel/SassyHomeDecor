@@ -274,8 +274,8 @@ body {
   float: left;
   text-align: center;
   display: inline-flex;
-  padding: 0em 0em 0em 1em;
-  margin: 2em 0em -4em 0em;
+  padding: 2em 0em 0em 4em;
+  margin: 0em 0em -4em 0em;
   width: 65%;
 }
 
@@ -439,10 +439,7 @@ body {
   width: 70%;
   float: right;
   text-align: center; */
-.footer_column1{
-  text-align: center;
-  margin: 10px 10px 10px 10px;
-}
+
 /* ----- ----- ----- Pricing Page Section Ends ----- ----- ----- */
 
 
@@ -457,6 +454,52 @@ h2 {
   margin: 25px;
   margin-bottom: 50px;
   font-size: 2em;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 2em;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .feature-heading {
@@ -800,7 +843,20 @@ h2 {
 
 /* ----- ----- ----- Furniture Media Queries Begin Here ----- ----- ----- */
 
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 /* -- Furniture Page Mobile Query Section Begins Here -- */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 /* -- Furniture Page Mobile Query Section Ends Here -- */
 
 /* -- Furniture Page Tablet Query Section Begins Here -- */
