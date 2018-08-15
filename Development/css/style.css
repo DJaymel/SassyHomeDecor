@@ -460,7 +460,7 @@ h2 {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .text {
@@ -479,6 +479,11 @@ h2 {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+
+.img_sizing {
+  width:100%;
+  height: 650px;
 }
 
 .dot {
@@ -517,9 +522,108 @@ h2 {
   font-size: 1.5em;
   margin: 0em 1em;
   justify-content: space-around;
-  background: #dedede;
+  background: #e2c2de1a;
   align-content: space-evenly;
 }
+
+.living_room_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/sofa2_thumbnail.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 105% 105%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bedroom_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/bedroom_thumbnail.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110% 110%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.kitchen_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/kitchen_dining_thumbnail.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.custom_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/custom_thumbnail.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65% 65%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.office_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/office2_thumbnail.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.accent_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/accent_thumbnail.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.bathroom_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/bathroom_thumbnail1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  height: 5em;
+  width: 5em;
+
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.outdoor_thumbnail {
+  background-color: #fff;
+  background-image: url(../img/outdoor2_thumbnail.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 85%;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
 
 .item {
   padding: 10px 10px 10px 10px;
@@ -528,7 +632,7 @@ h2 {
 }
 
 .item-header {
-  padding: 1em 0em 0em 0em;
+  padding: 0.15em 0em 0em 0em;
   margin: 0.25em 0em 0em 0em;
   font-size: 0.65em;
 }
