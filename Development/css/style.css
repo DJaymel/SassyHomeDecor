@@ -399,7 +399,6 @@ body {
     padding: 60px 0;
     color: #eee;
     z-index: 1;
-    /* overflow: hidden; */
     margin: 0% 5% 0% 20%;
 }
 
@@ -410,7 +409,7 @@ padding-right: 10px;
 .pricingGrid1 > div:nth-child(odd){
   background: linear-gradient(-45deg, #808080, #a9a9a9);
   border-radius: 15px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 10px 10px;
   transition: .5s;
   box-shadow: 0 10px 15px rgba(0,0,0);
