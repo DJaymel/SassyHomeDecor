@@ -43,8 +43,8 @@
           </div>
 
         <div id="main_about">
-          <div class="top-center">
-            <div class="aboutus_logo"></div>
+          <div class="top-center w3-center">
+            <div class="aboutus_logo"</div>
           </div>
 
           <div class="banner">
@@ -53,13 +53,22 @@
             </h1>
           </div>
 
-          <div class="SHD_Section1">
-            <div class="SHD_Section1_Column1">
-              <div class="SHD_Sect1_Image">
-                <img src="" alt="" class="sect1_pic">
-              </div>
+    <!-- <section class="add-padding add-flex">
+      <div class="center-text">
+        <h1 class="alex-brush"><span class="custom-font">Discover</span><br />OUR STORY</h1>
+        <h2>*</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur beatae laboriosam dicta tempora ab, dolorem mollitia perspiciatis, deleniti quidem dolor repellat animi. Quidem eligendi iste distinctio fugit maxime modi. Lorem ipsum dolor sit amet.</p>
+        <a href="#">about us</a>
+      </div>
+      <div  class="bluehome" data-aos="fade-left" data-aos-delay="300">
+      </div>
+    </section> -->
+          <!-- <div class="SHD_Section1 "> -->
+          <div class="w3-row">
+            <div class="w3-half">
+                <div class="sect1_pic SHD_Sect1_Image"></div>
             </div>
-            <div class="SHD_Section1_Column2">
+            <div class="w3-half w3-center SHD_Section1_Column2 m4 s16">
               <h3>A Complete Design Package</h3>
               <p class="Section1_Desc">We offer a full design service from planning to completion. We pride ourselves
                 on our relationships with our clients and are here to guide you through every element of creating your dream home.</p>
@@ -68,22 +77,19 @@
                 beautiful furnishings from all over the world and can create stunning bespoke furniture for your home.</p>
             </div>
           </div>
+        </div>
 
-          <div class="SHD_Section2">
-            <div class="SHD_Section2_Column1">
-              <h3>Home Styling and Personal Shopping</h3>
-              <p class="Section2_Desc">We love to help our clients with their homes and sometimes they just need some
-                finishing touches when they feel they can’t quite get a space right or there is an extra layer that their
-                home lacks. It may be piece of furniture that needs designing, a set of bespoke bedding or even a present
-                for a loved one. It may be the need a piece of furniture that needs designing, a set of bespoke bedding or
-                even a present for a loved one. It may be they need a complete design overhaul but without any structural changes.</p>
-              <p class="Section2_Desc">We have a beautiful bespoke service that can provide all those finishing touches
-                from commissioned artwork to rugs, carpets, photo walls, embroidered bedding, handmade furniture and more.</p>
-            </div>
-            <div class="SHD_Section2_Column2">
-              <div class="SHD_Sect2_Image"></div>
-            </div>
+        <div class="w3-row">
+          <div class="w3-half w3-center SHD_Section2_Column1">
+            <h3>Home Styling and Personal Shopping</h3>
+            <p class="Section2_Desc">We will measure your space. Sassy Home Decor provides superior one-on-one expert service in obtaining the furniture pieces you are looking for.</p>
+            <p class="Section2_Desc">We have a beautiful bespoke service that can provide all those finishing touches
+              from commissioned artwork to rugs, carpets, photo walls, embroidered bedding, handmade furniture and more.</p>
           </div>
+          <div class="w3-half">
+            <div class="SHD_Sect2_Image"></div>
+          </div>
+        </div>
 
           <h1 class="contact_ribbon">
               <strong class="ribbon-content">Contact Us</strong>
@@ -96,7 +102,7 @@
                         <b>Phone</b>
                       </h3>
                       <p class="readable w3-large">
-                        COMING SOON
+                        +1 (803) 873-0797
                       </p>
                   </div>
                 </div>
@@ -106,12 +112,10 @@
                       <h3 class="w3-xlarge">
                         <b>Visit</b>
                       </h3>
-                      <p class="readable w3-xlarge">
-                        <p class="tighten w3-large">Drop In Hours</p>
-                        <p class="tighten w3-large">Mon-Fri: 10:30am - 6pm</p>
-                        <p class="tighten w3-large">Sat: 10am - 5pm</p>
-                      </div>
+                      <p class="readable w3-large">
+                        By Appointment Only
                       </p>
+                      </div>
                   </div>
                   <div class="w3-container w3-third margin col w3-card-3 expand">
                     <div class="w3-center w3-panel">
@@ -168,6 +172,29 @@
         document.getElementById('sideMenu').style.width = '0px';
         document.getElementById('main').style.marginRight = '0px';
       }
+    </script>
+    <script>
+    // by: George Olaru https://dribbble.com/shots/1560982-Rosa-Restaurant-Website/attachments/239212
+
+$(document).ready(function() {
+
+$('button').on('click', function() {
+  if($(this).hasClass('nav-button')) {
+    $('nav div').addClass('show');
+  } else if($(this).hasClass('exit-menu')) {
+    $('nav div').removeClass('show');
+  }
+  else if($(this).hasClass('to-top')) {
+    $('html,body').animate({scrollTop:0}, 'slow');
+  }
+});
+
+AOS.init({
+      duration: 1800,
+  easing: 'ease'
+});
+
+})
     </script>
 
   </body>
